@@ -1,0 +1,33 @@
+{
+    "name": "zpetr/api-tools-cache",
+    "type": "library",
+    "description": "Response content and header cache module for Laminas Api Tools",
+    "keywords" : [
+        "api",
+        "apigility",
+        "module",
+        "laminas",
+		"api-tools",
+        "cache",
+        "fpc"
+    ],
+    "homepage": "https://github.com/zpetr/api-tools-cache",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Petr Guelin (Glushchenko)",
+            "email": "petr.glu@hotmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^7.0",
+        "laminas-api-tools/api-tools": "^1.4",
+		"laminas/laminas-cache": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "zPetr\\Cache\\": "src/"
+        }
+    }
+}
