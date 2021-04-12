@@ -273,7 +273,7 @@ class CacheListener extends AbstractListenerAggregate
             $cache->setItem($this->getKey(), $content);
             $cache->setItem($this->getKey() . '_HEADERS', serialize($headers->toArray()));
 
-            if(!empty($cacheConfig['tag'])){
+            if(method_exists($cache,'setTags') && !empty($cacheConfig['tag'])){
                 if(!is_array($cacheConfig['tag'])){
                     $cacheConfig['tag'] = array($cacheConfig['tag']);
                 }
