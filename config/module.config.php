@@ -2,7 +2,7 @@
 return [
     'service_manager' => [
         'factories' => [
-            \Cache\CacheListener::class => \Cache\CacheListenerFactory::class,
+            \zPetr\Cache\CacheListener::class => \zPetr\Cache\CacheListenerFactory::class,
         ],
     ],
 
